@@ -16,25 +16,26 @@
   <meta name="author" content="DYF">
   <meta name="keywords" content="">
   
-    <meta name="description" content="WIFI万能钥匙wifi万能钥匙可以一句话概括一下：用户装了wifi万能钥匙一般会默认分享自己连的wifi密码，当你看到手机wifi万能钥匙里有可破解的wifi的时候，那都是被别人分享过的，“破解”其实就是用别人分享的密码连上了。 一般wifi破解原理破解wifi，首先需要利用一些wifi破解软件，如aircrack-ng进行抓包，我们抓到的包成为握手包，握手包里面包含了加密后的wifi认证信息（">
+    <meta name="description" content="一判断图片类型拿到图片先拖入WinHex查看信息 PNG图像格式文件由一个8字节的PNG文件标识域和3个以上的后续数据块如:IHDR、IDAT、IEND等组成 头部为  89 50 4E 47 0D 0A 1A 0A  jpg图片的头数据为  FF D8 FF  gif头文件数据为  47 49 46 38 39 61  查看图片宽高以及CRC爆破   是否存在其他文件binwalk扫描图片  b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1.kalii 工具aircrack-ng利用之破解wifi">
-<meta property="og:url" content="http://example.com/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/index.html">
+<meta property="og:title" content="CTF图片隐写">
+<meta property="og:url" content="http://example.com/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/index.html">
 <meta property="og:site_name" content="Hello~">
-<meta property="og:description" content="WIFI万能钥匙wifi万能钥匙可以一句话概括一下：用户装了wifi万能钥匙一般会默认分享自己连的wifi密码，当你看到手机wifi万能钥匙里有可破解的wifi的时候，那都是被别人分享过的，“破解”其实就是用别人分享的密码连上了。 一般wifi破解原理破解wifi，首先需要利用一些wifi破解软件，如aircrack-ng进行抓包，我们抓到的包成为握手包，握手包里面包含了加密后的wifi认证信息（">
+<meta property="og:description" content="一判断图片类型拿到图片先拖入WinHex查看信息 PNG图像格式文件由一个8字节的PNG文件标识域和3个以上的后续数据块如:IHDR、IDAT、IEND等组成 头部为  89 50 4E 47 0D 0A 1A 0A  jpg图片的头数据为  FF D8 FF  gif头文件数据为  47 49 46 38 39 61  查看图片宽高以及CRC爆破   是否存在其他文件binwalk扫描图片  b">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/kali.jpg">
-<meta property="article:published_time" content="2024-05-23T12:10:46.000Z">
-<meta property="article:modified_time" content="2024-05-30T10:24:11.717Z">
+<meta property="og:image" content="http://example.com/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/61a108ed932546d1929641f9fa0b923a.png">
+<meta property="og:image" content="http://example.com/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/ee7a29c7c87c43e78ce69e3b3a4f0470.png">
+<meta property="article:published_time" content="2024-06-02T13:41:38.000Z">
+<meta property="article:modified_time" content="2024-06-02T14:15:25.885Z">
 <meta property="article:author" content="DYF">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/kali.jpg">
+<meta name="twitter:image" content="http://example.com/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/61a108ed932546d1929641f9fa0b923a.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>1.kalii 工具aircrack-ng利用之破解wifi - Hello~</title>
+  <title>CTF图片隐写 - Hello~</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -229,7 +230,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="1.kalii 工具aircrack-ng利用之破解wifi"></span>
+            <span id="subtitle" data-typed-text="CTF图片隐写"></span>
           
         </div>
 
@@ -240,8 +241,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-05-23 20:10" pubdate>
-          2024年5月23日 晚上
+        <time datetime="2024-06-02 21:41" pubdate>
+          2024年6月2日 晚上
         </time>
       </span>
     
@@ -252,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          170 字
         
       </span>
     
@@ -263,7 +264,7 @@
         
         
         
-          18 分钟
+          2 分钟
         
       </span>
     
@@ -308,81 +309,38 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">1.kalii 工具aircrack-ng利用之破解wifi</h1>
+            <h1 id="seo-header">CTF图片隐写</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="WIFI万能钥匙"><a href="#WIFI万能钥匙" class="headerlink" title="WIFI万能钥匙"></a>WIFI万能钥匙</h3><p>wifi万能钥匙可以一句话概括一下：用户装了wifi万能钥匙一般会默认分享自己连的wifi密码，当你看到手机wifi万能钥匙里有可破解的wifi的时候，那都是被别人分享过的，“破解”其实就是用别人分享的密码连上了。</p>
-<h3 id="一般wifi破解原理"><a href="#一般wifi破解原理" class="headerlink" title="一般wifi破解原理"></a>一般wifi破解原理</h3><p>破解wifi，首先需要利用一些wifi破解软件，如aircrack-ng进行抓包，我们抓到的包成为握手包，握手包里面包含了加密后的wifi认证信息（包含密码），根据不同的加密方式，破解方式与难度也有所不同。</p>
-<h3 id="wifi加密方式的区别"><a href="#wifi加密方式的区别" class="headerlink" title="wifi加密方式的区别"></a>wifi加密方式的区别</h3><p>一般wifi加密方式分为两种wep与wpa&#x2F;wpa2，详细加密算法有兴趣的可以百度一下。<br>wep加密方式比较简单，如aircrack-ng可直接读取到密码，这种加密方式已经逐渐淘汰，而且如今常见的路由器加密已经基本上都是wpa&#x2F;wpa2加密，如wpa&#x2F;wpa2的加密方式相对复杂，所以我们从抓到的包里得到的密钥是经过更加复杂的加密，没有wep那么简单，针对wpa&#x2F;wpa2加密后的密钥只能通过暴力破解，比如，我们一般用的windows上的破解软件是EWSA，全称Elcomsoft Wireless Security Auditor。爆破一般都是基于字典的爆破，比如网上有很多wpa的字典下载，集合了很多弱口令或者人们常用的密码，</p>
-<h3 id="如何抓到握手包？"><a href="#如何抓到握手包？" class="headerlink" title="如何抓到握手包？"></a>如何抓到握手包？</h3><p>这种抓包破解的方法的前提是需要有客户端连接的，比如你家隔壁有个网，但是他家没有任何一个设备连着这个无线网，抓包的时候也没人会去连，这种情况是无法抓包的，但是情况比较少。<br>之所以需要有客户端连接，是因为抓包的过程中会监测新设备连接这个网，有新设备连接就会有认证过程，就会有握手包，wifi破解工具比如aircrack-ng会有附加的功能：强制已连接的客户端与AP断开，这样客户端就会自动重新连接，也就能抓到包了。<br>PS：如果你输入一个错误密码也是能抓到包的，不过这个包的认证是没有成功的。</p>
-<h3 id="工具aircrack-ng介绍"><a href="#工具aircrack-ng介绍" class="headerlink" title="工具aircrack-ng介绍"></a>工具aircrack-ng介绍</h3><p>Aircrack-ng是一个与802.11标准的无线网络分析有关的安全软件，主要功能有：网络侦测，数据包嗅探，WEP和WPA&#x2F;WPA2-PSK破解。Aircrack-ng可以工作在任何支持监听模式的无线网卡上（设备列表请参阅其官方网站或）并嗅探802.11a，802.11b，802.11g的数据。该程序可运行在Linux和Windows上。Linux版本已经被移植到了Zaurus和Maemo系统平台, 并概念验证可移植到iPhone。</p>
-<h4 id="aircrack-ng原理："><a href="#aircrack-ng原理：" class="headerlink" title="aircrack-ng原理："></a>aircrack-ng原理：</h4><p>aircrack-ng一般是用来恢复WEP,WPA-PSK的密码，通过之前流量数据包的收集，可以用来破解数据包。<br>通过之前用wireshark收集的流量包，配合爆破的密码来进行，就可以解析数据包了。</p>
-<h3 id="实验过程"><a href="#实验过程" class="headerlink" title="实验过程"></a>实验过程</h3><p>1.将你的无线网卡插入，并确保服务开启，再将你的无线网卡映射到虚拟机里面。<br>很重要的一步也很容易出错，要确保虚拟机USB服务开启后在进行</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%871.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-<p>2.查看网卡状态</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%872.png" srcset="/img/loading.gif" lazyload class title="网页源码">
+                <h2 id="一判断图片类型"><a href="#一判断图片类型" class="headerlink" title="一判断图片类型"></a>一判断图片类型</h2><p>拿到图片先拖入WinHex查看信息</p>
+<p>PNG图像格式文件由一个8字节的PNG文件标识域和3个以上的后续数据块如:IHDR、IDAT、IEND等组成</p>
+<p>头部为</p>
+<blockquote>
+<p>89 50 4E 47 0D 0A 1A 0A</p>
+</blockquote>
+<p>jpg图片的头数据为</p>
+<blockquote>
+<p>FF D8 FF</p>
+</blockquote>
+<p>gif头文件数据为</p>
+<blockquote>
+<p>47 49 46 38 39 61</p>
+</blockquote>
+<h2 id="查看图片宽高以及CRC爆破"><a href="#查看图片宽高以及CRC爆破" class="headerlink" title="查看图片宽高以及CRC爆破"></a>查看图片宽高以及CRC爆破</h2><img src="/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/61a108ed932546d1929641f9fa0b923a.png" srcset="/img/loading.gif" lazyload class title="网页源码">
+<img src="/2024/06/02/CTF%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/ee7a29c7c87c43e78ce69e3b3a4f0470.png" srcset="/img/loading.gif" lazyload class title="网页源码">
 
-<p>3.查看网卡是否正常<br>iwconfig</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%873.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-<p> 可以看到一个名字为wlan0的网卡，如果你是笔记本物理机这里应该有两个网卡，我这个是虚拟机所以之后一个waln0。可以看到我们无线网卡已经插入虚拟机并且成功识别。</p>
-<p>4.查看网卡是否启动<br>ifconfig</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%874.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-<p>5.启动无线网卡：</p>
-<p>ifconfig wlan0 up 启动wlan0网卡</p>
-<p>ifconfig wlan0 down 关闭wlan0网卡</p>
-<p> 好了现在为止关于无线网卡我们已经成功启动。</p>
-<p>第二步：启动网卡的监听模式</p>
-<p>1.添加网卡监听模式</p>
-<p>airmon-ng start wlan0</p>
-<p>此时提醒我们有两个麻烦可能会干扰，我们需要执行“airmon-ng check kill”命令。注意此时输入此命令kali系统会关闭网络服务，导致无法上网。</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%876.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-<p>2.监听附近wifi<br>airodump-ng wlan0</p>
- <img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%877.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-<p> CH：信道 一般情况13个信道，在抓包是会不停跳动代表他所监听的信道。</p>
-<p>BSSID：无线AP的mac地址</p>
-<p>PWR：信号强度，当时-1 时代表无线AP和客户端有连接但是你网卡的监听距离离客户端过远。</p>
-<p>ENC：加密算法体系</p>
-<p>CIPHER：加密算法</p>
-<p>ESSID：就是你WiFi名称，有些隐藏的wifi也会被发现&lt;length 0&gt;</p>
-<p>STATION： 客户端mac</p>
-<p>第三步：挑选一个WiFi进行单独抓包<br>1.挑选并保存抓包数据<br>我们停止抓包ctrl+c 停止抓包。</p>
-<p>我要对nova9进行破解，通过刚才的抓包发现该wifi信道是1 还有BSSID</p>
-<p>airodump-ng  -c 8 –bssid 0E:9E:C7:DA:80:31 -w &#x2F;home&#x2F;dyf&#x2F;Desktop&#x2F;ng wlan0 </p>
-<p>-c 是指定信道</p>
-<p>–bssid 指定该WiFi的mac地址</p>
-<p>-w 指定保存的路径（该路径必须存在否则会报错）默认保存在你终端的当前路径。</p>
-<p>我们创建一个文件来放置抓取的数据包，然后在重新对其进行监听。</p>
-<p> 好的我们已经看见了有1个连接到我这WiFi了，我们可以打开刚才创建的文件看看里面的文件</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%878.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-
-
-<p> 我们可以看到是一个apple设备连接。</p>
-<p>3.获取握手包</p>
-<p>我们新开一个窗口，注意刚才抓包的窗口不要停止，要一直运行。</p>
-<p>aireplay-ng -0 20 -a 0E:9E:C7:DA:80:31  -c  B0:7D:64:D7:62:0C  wlan0</p>
-<p>-0 模式，后面跟你要攻击的次数我给的是20，如果过大对方则会一直连接不上。</p>
-<p>-a 无线APmac地址</p>
-<p>-c 客户端mac地址</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%879.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-
-<p> 注意左边红框，当你打掉对方客户端，对方进行重连是会出来握手包，如果出现则表示握手包抓取成功。</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%8710.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-
-<p>表示已经抓取到该wifi的握手包。我们可以停止监听了。</p>
-<p>4.破解wifi的握手包</p>
-<p>aircrack-ng   -w  字典路径  -b  握手包路径</p>
-<img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%8711.png" srcset="/img/loading.gif" lazyload class title="网页源码">
-
-<p>我随便找了一个字典，里面有这个WiFi的密码，所以我这个包肯定是可以跑出密码的。</p>
-<p>如果你的字典路径过于离谱也可以直接拖进去都是可以的。<br> <img src="/2024/05/23/1-kalii-%E5%B7%A5%E5%85%B7aircrack-ng%E5%88%A9%E7%94%A8%E4%B9%8B%E7%A0%B4%E8%A7%A3wifi/%E5%9B%BE%E7%89%8712.png" srcset="/img/loading.gif" lazyload class title="网页源码"><br>他会给你显示你的字典有多大，每秒多少的破解速度，还有多久可以跑完整个字典,最终成功找到密码。</p>
-<p>这种方法其实成功率取决与密码字典的大小，字典越丰富成功率也就越高。推荐几个常用字典：<a target="_blank" rel="noopener" href="https://github.com/conwnet/wpa-dictionary">https://github.com/conwnet/wpa-dictionary</a><br><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1L1mDFRJAcShwU1gBAbECkx7OR_C7Ef90/view">https://drive.google.com/file/d/1L1mDFRJAcShwU1gBAbECkx7OR_C7Ef90/view</a></p>
+<h2 id="是否存在其他文件"><a href="#是否存在其他文件" class="headerlink" title="是否存在其他文件"></a>是否存在其他文件</h2><p>binwalk扫描图片</p>
+<blockquote>
+<p>binwalk dog.jpg</p>
+</blockquote>
+<p>如果存在通过foremost提取图片中的文件</p>
+<blockquote>
+<p>foremost dog.jpg -o dog  &#x2F;&#x2F;-o：指定输出的文件夹</p>
+</blockquote>
+<h2 id="盲水印"><a href="#盲水印" class="headerlink" title="盲水印"></a>盲水印</h2><h2 id="LSB隐写"><a href="#LSB隐写" class="headerlink" title="LSB隐写"></a>LSB隐写</h2><p>图像色彩<br>用Stegsolve</p>
+<p>提取图像中的隐藏数据<br>lsb extract secret.png flag.txt  7his_1s_p4s5w0rd<br>&#x2F;&#x2F;extract：提取，后面为需要提取信息的图片和输出的文件名，以及key值</p>
 
                 
               </div>
@@ -400,8 +358,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>1.kalii 工具aircrack-ng利用之破解wifi</div>
-      <div>http://example.com/2024/05/23/1-kalii-工具aircrack-ng利用之破解wifi/</div>
+      <div>CTF图片隐写</div>
+      <div>http://example.com/2024/06/02/CTF图片隐写/</div>
     </div>
     <div class="license-meta">
       
@@ -440,18 +398,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/05/30/RCE-%E4%BB%A3%E7%A0%81-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/" title="RCE 代码&amp;命令执行漏洞">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">RCE 代码&amp;命令执行漏洞</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/05/18/%E7%BD%91%E5%AE%89%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="网安学习——文件上传漏洞">
-                        <span class="hidden-mobile">网安学习——文件上传漏洞</span>
+                      <a href="/2024/05/30/RCE-%E4%BB%A3%E7%A0%81-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/" title="RCE 代码&amp;命令执行漏洞">
+                        <span class="hidden-mobile">RCE 代码&amp;命令执行漏洞</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
